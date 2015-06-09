@@ -21,7 +21,7 @@ $(document).ready(function inicio(){
    //alert("matricula="+mat+"&nombre="+nom+"&apellidoP="+app+"&apellidoM="+apm+"&email="+email+"&telefono="+tel+"&direc="+dir);
     $.ajax({
     type:"POST",
-    url:"envio.php",
+    url:"http://chucovillan.260mb.net/envio.php",
     data:"matricula="+mat+"&nombre="+nom+"&apellidoP="+app+"&apellidoM="+apm+"&email="+email+"&telefono="+tel+"&direc="+dir,
     success: recepcion
     });
@@ -49,7 +49,7 @@ $(document).ready(function inicio(){
  
     $.ajax({
     type:"POST",
-    url:"envio2.php",
+    url:"http://chucovillan.260mb.net/envio2.php",
     data:"matricula="+mat+"&primerp="+cal1+"&segundop="+cal2+"&tercerp="+cal3+"&cuartop="+cal4,
     success: recepcion2
     });
